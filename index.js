@@ -10,13 +10,15 @@ mongoose.Promise = global.Promise
 
 app.use(bodyParser.json())
 
-const routes = require('./routes/api')
+app.use('/api', require('./routes/api'));
+
+
 
 app.use(function(err, req, res, next) {
     res.status(422).send({error: err.message})
 })
 
-app.use(routes)
+
 
 
 app.listen(port, () => console.log(`listening on port ${port}`))
