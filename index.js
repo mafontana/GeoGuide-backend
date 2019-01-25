@@ -12,6 +12,10 @@ app.use(bodyParser.json())
 
 const routes = require('./routes/api')
 
+app.use(function(err, req, res, next) {
+    res.status(422).send({error: err.message})
+})
+
 app.use(routes)
 
 
