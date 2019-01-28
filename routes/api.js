@@ -14,11 +14,16 @@ router.get('/points/:id', function(req, res, next){
 
 })
 
-
 router.post('/points', function(req, res, next){
     POIs.create(req.body).then(function(POI){
         res.send(POI)
     }).catch(next)
+})
+
+router.delete('/points/:id', function(req, res, next){
+    POIs.findByIdAndDelete({_id: req.params.id}).then(function(point){
+        res.send(point)
+    })
 })
 
 

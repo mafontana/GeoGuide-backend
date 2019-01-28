@@ -14,12 +14,25 @@ const GeoSchema = new Schema({
     }
 })
 
+const GeoSchemaTrail = new Schema({
+    type: {
+        type: String,
+        default: "LineString"
+    },
+    coordinates: {
+        type: [Number],
+        index: "2dsphere"
+    }
+})
+
+
+
+
 const POIschema = new Schema({
     name: {
         type: String
     },
     geometry: GeoSchema
-    
 })
 
 const POI = mongoose.model('POI', POIschema)
