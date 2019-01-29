@@ -15,11 +15,13 @@ const geologic_formation_schema = new Schema({
    formation_2: {
     name: String,
     age_mya: Number,
+    geologic_age: String,
     description: String
    },
    formation_3: {
     name: String,
     age_mya: Number,
+    geologic_age: String,
     description: String
    }
 })
