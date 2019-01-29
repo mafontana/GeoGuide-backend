@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/polling')
+
 //geolocation Schema
 
 const geologic_formation_schema = new Schema({

@@ -4,6 +4,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/polling')
+
 mongoose.connect('mongodb://localhost/geoguide')
 
 mongoose.Promise = global.Promise
