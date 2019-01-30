@@ -46,3 +46,8 @@ View demo on YouTube [here](https://www.youtube.com/watch?v=FwqQZZcBBNA&feature=
 ## Author
 
 * [Meredith Fontana](https://github.com/mafontana)
+
+## Contact 
+
+[LinkedIn](linkedin.com/meredithafontana)
+[email](meredith.fontana@gmail.com)
