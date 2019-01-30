@@ -47,5 +47,5 @@ View demo on YouTube [here](https://www.youtube.com/watch?v=FwqQZZcBBNA&feature=
 
 ## Contact 
 
-[LinkedIn](https://www.linkedin.com/meredithafontana)
-email: meredith.fontana@gmail.com
+[LinkedIn](https://www.linkedin.com/meredithafontana) <br />
+meredith.fontana@gmail.com
