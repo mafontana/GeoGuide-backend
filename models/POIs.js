@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/polling')
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/polling')
+
+mongoose.connect('geo-database');
 
 //geolocation Schema
 
@@ -74,13 +76,13 @@ const AR_scene_coordinate_schema = new Schema({
 })
 
 
-
 const POIschema = new Schema({
     name: {
         type: String
     }, 
     AR_scenes: AR_scene_coordinate_schema,
     geologic_formations: geologic_formation_schema, 
+
 })
 
 const POI = mongoose.model('POI', POIschema)
