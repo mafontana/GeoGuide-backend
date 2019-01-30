@@ -3,8 +3,8 @@
 
 ### GeoGuide is an education app that uses augmented reality to teach hikers about geology while they are out on the trail. 
 
-View repository for back-end here: https://github.com/mafontana/GeoGuide-backend
-View deployed back-end API here: https://geoguide-server.herokuapp.com/api/points
+View repository for back end [here](https://github.com/mafontana/GeoGuide-backend)
+View deployed back end API [here](https://geoguide-server.herokuapp.com/api/points)
 
 ## Getting Started
 
